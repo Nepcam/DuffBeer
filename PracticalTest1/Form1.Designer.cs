@@ -33,7 +33,6 @@
             this.textBoxNumberOfBottles = new System.Windows.Forms.TextBox();
             this.labelNumberOfBottles = new System.Windows.Forms.Label();
             this.buttonCalculateBeer = new System.Windows.Forms.Button();
-            this.buttonBeer = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
             this.textBoxBeerForBottles = new System.Windows.Forms.TextBox();
@@ -50,7 +49,7 @@
             // 
             this.labelNumberOfCans.AutoSize = true;
             this.labelNumberOfCans.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNumberOfCans.Location = new System.Drawing.Point(202, 33);
+            this.labelNumberOfCans.Location = new System.Drawing.Point(34, 32);
             this.labelNumberOfCans.Name = "labelNumberOfCans";
             this.labelNumberOfCans.Size = new System.Drawing.Size(152, 24);
             this.labelNumberOfCans.TabIndex = 0;
@@ -59,7 +58,7 @@
             // textBoxNumberOfCans
             // 
             this.textBoxNumberOfCans.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNumberOfCans.Location = new System.Drawing.Point(475, 33);
+            this.textBoxNumberOfCans.Location = new System.Drawing.Point(307, 32);
             this.textBoxNumberOfCans.Name = "textBoxNumberOfCans";
             this.textBoxNumberOfCans.Size = new System.Drawing.Size(128, 29);
             this.textBoxNumberOfCans.TabIndex = 1;
@@ -67,7 +66,7 @@
             // textBoxNumberOfBottles
             // 
             this.textBoxNumberOfBottles.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNumberOfBottles.Location = new System.Drawing.Point(475, 79);
+            this.textBoxNumberOfBottles.Location = new System.Drawing.Point(307, 78);
             this.textBoxNumberOfBottles.Name = "textBoxNumberOfBottles";
             this.textBoxNumberOfBottles.Size = new System.Drawing.Size(128, 29);
             this.textBoxNumberOfBottles.TabIndex = 3;
@@ -76,7 +75,7 @@
             // 
             this.labelNumberOfBottles.AutoSize = true;
             this.labelNumberOfBottles.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNumberOfBottles.Location = new System.Drawing.Point(202, 79);
+            this.labelNumberOfBottles.Location = new System.Drawing.Point(34, 78);
             this.labelNumberOfBottles.Name = "labelNumberOfBottles";
             this.labelNumberOfBottles.Size = new System.Drawing.Size(164, 24);
             this.labelNumberOfBottles.TabIndex = 2;
@@ -84,7 +83,7 @@
             // 
             // buttonCalculateBeer
             // 
-            this.buttonCalculateBeer.Location = new System.Drawing.Point(152, 344);
+            this.buttonCalculateBeer.Location = new System.Drawing.Point(38, 343);
             this.buttonCalculateBeer.Name = "buttonCalculateBeer";
             this.buttonCalculateBeer.Size = new System.Drawing.Size(107, 51);
             this.buttonCalculateBeer.TabIndex = 4;
@@ -92,18 +91,9 @@
             this.buttonCalculateBeer.UseVisualStyleBackColor = true;
             this.buttonCalculateBeer.Click += new System.EventHandler(this.buttonCalculateBeer_Click);
             // 
-            // buttonBeer
-            // 
-            this.buttonBeer.Location = new System.Drawing.Point(279, 344);
-            this.buttonBeer.Name = "buttonBeer";
-            this.buttonBeer.Size = new System.Drawing.Size(107, 51);
-            this.buttonBeer.TabIndex = 5;
-            this.buttonBeer.Text = "Beer";
-            this.buttonBeer.UseVisualStyleBackColor = true;
-            // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(407, 344);
+            this.buttonClear.Location = new System.Drawing.Point(185, 343);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(107, 51);
             this.buttonClear.TabIndex = 6;
@@ -113,7 +103,7 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(529, 344);
+            this.buttonExit.Location = new System.Drawing.Point(328, 343);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(107, 51);
             this.buttonExit.TabIndex = 7;
@@ -124,7 +114,7 @@
             // textBoxBeerForBottles
             // 
             this.textBoxBeerForBottles.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBeerForBottles.Location = new System.Drawing.Point(475, 169);
+            this.textBoxBeerForBottles.Location = new System.Drawing.Point(307, 168);
             this.textBoxBeerForBottles.Name = "textBoxBeerForBottles";
             this.textBoxBeerForBottles.ReadOnly = true;
             this.textBoxBeerForBottles.Size = new System.Drawing.Size(128, 29);
@@ -134,7 +124,7 @@
             // 
             this.labelBeerForBottles.AutoSize = true;
             this.labelBeerForBottles.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBeerForBottles.Location = new System.Drawing.Point(202, 169);
+            this.labelBeerForBottles.Location = new System.Drawing.Point(34, 168);
             this.labelBeerForBottles.Name = "labelBeerForBottles";
             this.labelBeerForBottles.Size = new System.Drawing.Size(210, 24);
             this.labelBeerForBottles.TabIndex = 10;
@@ -143,7 +133,7 @@
             // textBoxBeerForCans
             // 
             this.textBoxBeerForCans.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBeerForCans.Location = new System.Drawing.Point(475, 123);
+            this.textBoxBeerForCans.Location = new System.Drawing.Point(307, 122);
             this.textBoxBeerForCans.Name = "textBoxBeerForCans";
             this.textBoxBeerForCans.ReadOnly = true;
             this.textBoxBeerForCans.Size = new System.Drawing.Size(128, 29);
@@ -153,7 +143,7 @@
             // 
             this.labelBeerRequired.AutoSize = true;
             this.labelBeerRequired.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBeerRequired.Location = new System.Drawing.Point(202, 123);
+            this.labelBeerRequired.Location = new System.Drawing.Point(34, 122);
             this.labelBeerRequired.Name = "labelBeerRequired";
             this.labelBeerRequired.Size = new System.Drawing.Size(198, 24);
             this.labelBeerRequired.TabIndex = 8;
@@ -162,7 +152,7 @@
             // textBoxTotalCost
             // 
             this.textBoxTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTotalCost.Location = new System.Drawing.Point(475, 261);
+            this.textBoxTotalCost.Location = new System.Drawing.Point(307, 260);
             this.textBoxTotalCost.Name = "textBoxTotalCost";
             this.textBoxTotalCost.ReadOnly = true;
             this.textBoxTotalCost.Size = new System.Drawing.Size(128, 29);
@@ -172,7 +162,7 @@
             // 
             this.labelTotalCost.AutoSize = true;
             this.labelTotalCost.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalCost.Location = new System.Drawing.Point(202, 261);
+            this.labelTotalCost.Location = new System.Drawing.Point(34, 260);
             this.labelTotalCost.Name = "labelTotalCost";
             this.labelTotalCost.Size = new System.Drawing.Size(98, 24);
             this.labelTotalCost.TabIndex = 14;
@@ -181,7 +171,7 @@
             // textBoxTotalBeer
             // 
             this.textBoxTotalBeer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTotalBeer.Location = new System.Drawing.Point(475, 215);
+            this.textBoxTotalBeer.Location = new System.Drawing.Point(307, 214);
             this.textBoxTotalBeer.Name = "textBoxTotalBeer";
             this.textBoxTotalBeer.ReadOnly = true;
             this.textBoxTotalBeer.Size = new System.Drawing.Size(128, 29);
@@ -191,7 +181,7 @@
             // 
             this.labelTotalBeer.AutoSize = true;
             this.labelTotalBeer.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotalBeer.Location = new System.Drawing.Point(202, 215);
+            this.labelTotalBeer.Location = new System.Drawing.Point(34, 214);
             this.labelTotalBeer.Name = "labelTotalBeer";
             this.labelTotalBeer.Size = new System.Drawing.Size(184, 24);
             this.labelTotalBeer.TabIndex = 12;
@@ -201,7 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(867, 450);
             this.Controls.Add(this.textBoxTotalCost);
             this.Controls.Add(this.labelTotalCost);
             this.Controls.Add(this.textBoxTotalBeer);
@@ -212,7 +202,6 @@
             this.Controls.Add(this.labelBeerRequired);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonClear);
-            this.Controls.Add(this.buttonBeer);
             this.Controls.Add(this.buttonCalculateBeer);
             this.Controls.Add(this.textBoxNumberOfBottles);
             this.Controls.Add(this.labelNumberOfBottles);
@@ -233,7 +222,6 @@
         private System.Windows.Forms.TextBox textBoxNumberOfBottles;
         private System.Windows.Forms.Label labelNumberOfBottles;
         private System.Windows.Forms.Button buttonCalculateBeer;
-        private System.Windows.Forms.Button buttonBeer;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonExit;
         private System.Windows.Forms.TextBox textBoxBeerForBottles;

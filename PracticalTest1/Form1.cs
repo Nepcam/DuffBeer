@@ -87,8 +87,23 @@ namespace PracticalTest1
                 beerNeededForCans = numberOfCans * CAN_SIZE;
                 Console.WriteLine(beerNeededForCans);
                 //CALCULATE the amount of beer needed to fill the bottles
+                beerNeededForBottles = numberOfBottles * BOTTLE_SIZE;
+                Console.WriteLine(beerNeededForBottles);
                 //CALCULATE the amount of beer needed to fill the bottles
+                totalBeerNeeded = beerNeededForCans + beerNeededForBottles;
+                Console.WriteLine(totalBeerNeeded);
                 //CALCULATE the total cost of the beer required
+                totalCost = (decimal)totalBeerNeeded * BEER_COST;
+                Console.WriteLine(totalCost);
+
+                //DISPLAY the amount of beer required for cans
+                textBoxBeerForCans.Text = beerNeededForCans.ToString();
+                //DISPLAY the amount of beer required for bottles
+                textBoxBeerForBottles.Text = beerNeededForBottles.ToString();
+                //DISPLAY the total amount of beer required
+                textBoxTotalBeer.Text = totalBeerNeeded.ToString();
+                //DISPLAY the total cost of the beer
+                textBoxTotalCost.Text = totalCost.ToString("N3");
             }
             catch (Exception ex)
             {
