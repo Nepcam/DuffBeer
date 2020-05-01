@@ -32,7 +32,7 @@
             this.textBoxNumberOfCans = new System.Windows.Forms.TextBox();
             this.textBoxNumberOfBottles = new System.Windows.Forms.TextBox();
             this.labelNumberOfBottles = new System.Windows.Forms.Label();
-            this.buttonCalculate = new System.Windows.Forms.Button();
+            this.buttonCalculateBeer = new System.Windows.Forms.Button();
             this.buttonBeer = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.buttonExit = new System.Windows.Forms.Button();
@@ -82,14 +82,15 @@
             this.labelNumberOfBottles.TabIndex = 2;
             this.labelNumberOfBottles.Text = "Number of Bottles:";
             // 
-            // buttonCalculate
+            // buttonCalculateBeer
             // 
-            this.buttonCalculate.Location = new System.Drawing.Point(152, 344);
-            this.buttonCalculate.Name = "buttonCalculate";
-            this.buttonCalculate.Size = new System.Drawing.Size(107, 51);
-            this.buttonCalculate.TabIndex = 4;
-            this.buttonCalculate.Text = "Calculate";
-            this.buttonCalculate.UseVisualStyleBackColor = true;
+            this.buttonCalculateBeer.Location = new System.Drawing.Point(152, 344);
+            this.buttonCalculateBeer.Name = "buttonCalculateBeer";
+            this.buttonCalculateBeer.Size = new System.Drawing.Size(107, 51);
+            this.buttonCalculateBeer.TabIndex = 4;
+            this.buttonCalculateBeer.Text = "Calculate";
+            this.buttonCalculateBeer.UseVisualStyleBackColor = true;
+            this.buttonCalculateBeer.Click += new System.EventHandler(this.buttonCalculateBeer_Click);
             // 
             // buttonBeer
             // 
@@ -212,7 +213,7 @@
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonClear);
             this.Controls.Add(this.buttonBeer);
-            this.Controls.Add(this.buttonCalculate);
+            this.Controls.Add(this.buttonCalculateBeer);
             this.Controls.Add(this.textBoxNumberOfBottles);
             this.Controls.Add(this.labelNumberOfBottles);
             this.Controls.Add(this.textBoxNumberOfCans);
@@ -231,7 +232,7 @@
         private System.Windows.Forms.TextBox textBoxNumberOfCans;
         private System.Windows.Forms.TextBox textBoxNumberOfBottles;
         private System.Windows.Forms.Label labelNumberOfBottles;
-        private System.Windows.Forms.Button buttonCalculate;
+        private System.Windows.Forms.Button buttonCalculateBeer;
         private System.Windows.Forms.Button buttonBeer;
         private System.Windows.Forms.Button buttonClear;
         private System.Windows.Forms.Button buttonExit;

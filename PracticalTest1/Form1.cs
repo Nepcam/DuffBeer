@@ -58,5 +58,52 @@ namespace PracticalTest1
             //Set the focus to number of cans textbox
             textBoxNumberOfCans.Focus();
         }
+
+        /// <summary>
+        /// Calculate beer button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void buttonCalculateBeer_Click(object sender, EventArgs e)
+        {
+            // Initiate Variables
+            int numberOfCans = 0;
+            int numberOfBottles = 0;
+            double beerNeededForCans = 0;
+            double beerNeededForBottles = 0;
+            double totalBeerNeeded = 0;
+            decimal totalCost = 0;
+
+            try
+            {
+                //GET the number of cans ordered 
+                numberOfCans = int.Parse(textBoxNumberOfCans.Text);
+                Console.WriteLine(numberOfCans);
+                //GET the number of bottles ordered
+                numberOfBottles = int.Parse(textBoxNumberOfBottles.Text);
+                Console.WriteLine(numberOfBottles);
+
+                //CALCULATE the amount of beer needed to fill the cans
+                beerNeededForCans = numberOfCans * CAN_SIZE;
+                Console.WriteLine(beerNeededForCans);
+                //CALCULATE the amount of beer needed to fill the bottles
+                //CALCULATE the amount of beer needed to fill the bottles
+                //CALCULATE the total cost of the beer required
+            }
+            catch (Exception ex)
+            {
+                //Display Error Message
+                MessageBox.Show(ex.Message);
+                //Clear all the textboxes and set the focus to number of cans
+                textBoxNumberOfCans.Text = "";
+                textBoxNumberOfBottles.Text = "";
+                textBoxBeerForCans.Text = "";
+                textBoxBeerForBottles.Text = "";
+                textBoxTotalBeer.Text = "";
+                textBoxTotalCost.Text = "";
+                //Set the focus to number of cans textbox
+                textBoxNumberOfCans.Focus();
+            }
+        }
     }
 }
