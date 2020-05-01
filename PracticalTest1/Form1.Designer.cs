@@ -43,6 +43,10 @@
             this.labelTotalCost = new System.Windows.Forms.Label();
             this.textBoxTotalBeer = new System.Windows.Forms.TextBox();
             this.labelTotalBeer = new System.Windows.Forms.Label();
+            this.textBoxCostOfKegs = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxNumKegs = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelNumberOfCans
@@ -187,11 +191,53 @@
             this.labelTotalBeer.TabIndex = 12;
             this.labelTotalBeer.Text = "Total Beer Required:";
             // 
+            // textBoxCostOfKegs
+            // 
+            this.textBoxCostOfKegs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxCostOfKegs.Location = new System.Drawing.Point(729, 78);
+            this.textBoxCostOfKegs.Name = "textBoxCostOfKegs";
+            this.textBoxCostOfKegs.ReadOnly = true;
+            this.textBoxCostOfKegs.Size = new System.Drawing.Size(128, 29);
+            this.textBoxCostOfKegs.TabIndex = 19;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(456, 78);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(120, 24);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Cost of Kegs:";
+            // 
+            // textBoxNumKegs
+            // 
+            this.textBoxNumKegs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxNumKegs.Location = new System.Drawing.Point(729, 32);
+            this.textBoxNumKegs.Name = "textBoxNumKegs";
+            this.textBoxNumKegs.ReadOnly = true;
+            this.textBoxNumKegs.Size = new System.Drawing.Size(128, 29);
+            this.textBoxNumKegs.TabIndex = 17;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(456, 32);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(158, 24);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Number of Kegs):";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(867, 450);
+            this.Controls.Add(this.textBoxCostOfKegs);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBoxNumKegs);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxTotalCost);
             this.Controls.Add(this.labelTotalCost);
             this.Controls.Add(this.textBoxTotalBeer);
@@ -232,6 +278,10 @@
         private System.Windows.Forms.Label labelTotalCost;
         private System.Windows.Forms.TextBox textBoxTotalBeer;
         private System.Windows.Forms.Label labelTotalBeer;
+        private System.Windows.Forms.TextBox textBoxCostOfKegs;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBoxNumKegs;
+        private System.Windows.Forms.Label label2;
     }
 }
 

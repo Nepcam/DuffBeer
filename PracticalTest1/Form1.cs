@@ -72,7 +72,9 @@ namespace PracticalTest1
             double beerNeededForCans = 0;
             double beerNeededForBottles = 0;
             double totalBeerNeeded = 0;
-            decimal totalCost = 0;
+            decimal totalCost = 0m;
+            int numOfKegs = 0;
+            decimal costOfKegs = 0m;
 
             try
             {
@@ -96,6 +98,11 @@ namespace PracticalTest1
                 totalCost = (decimal)totalBeerNeeded * BEER_COST;
                 Console.WriteLine(totalCost);
 
+                //CALCULATE the number of kegs
+                numOfKegs = KEG_SIZE / (numberOfCans + numberOfBottles);
+                //CALCULATE the cost of kegs
+                costOfKegs = KEG_COST * numOfKegs;
+
                 //DISPLAY the amount of beer required for cans
                 textBoxBeerForCans.Text = beerNeededForCans.ToString();
                 //DISPLAY the amount of beer required for bottles
@@ -103,7 +110,11 @@ namespace PracticalTest1
                 //DISPLAY the total amount of beer required
                 textBoxTotalBeer.Text = totalBeerNeeded.ToString();
                 //DISPLAY the total cost of the beer
-                textBoxTotalCost.Text = totalCost.ToString("N3");
+                textBoxTotalCost.Text = totalCost.ToString("c");
+                //DISPLAY number of kegs
+                textBoxNumKegs.Text = numOfKegs.ToString("N3");
+                //DISPLAY cost of kegs
+                textBoxCostOfKegs.Text = costOfKegs.ToString("c");
             }
             catch (Exception ex)
             {
