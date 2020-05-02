@@ -112,7 +112,7 @@ namespace PracticalTest1
                 //DISPLAY the total cost of the beer
                 textBoxTotalCost.Text = totalCost.ToString("c");
                 //DISPLAY number of kegs
-                textBoxNumKegs.Text = numOfKegs.ToString("N3");
+                textBoxNumKegs.Text = numOfKegs.ToString("N2");
                 //DISPLAY cost of kegs
                 textBoxCostOfKegs.Text = costOfKegs.ToString("c");
             }
